@@ -85,7 +85,7 @@ a.navbar-item:hover {
     align-items: center;
     justify-content: space-evenly;
     gap: 10rem;
-    background-image: url(/image/background.webp);
+    background-image: url(image/background.webp);
     background-size: cover;
 }
 
