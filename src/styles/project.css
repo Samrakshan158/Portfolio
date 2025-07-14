@@ -1,0 +1,109 @@
+#projects {
+    padding: 2rem;
+    background-color: #1B2E69;
+    color: white;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: var(--card-color);
+    color: #c9d1d9;
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 540px;
+    box-shadow: 0 6px 10px rgb(112, 112, 112);
+    opacity: 0;
+    transform: translateY(40px);
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-card.visible {
+    opacity: 0.8;
+    transform: translateY(5px);
+}
+
+.project-card.visible:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(56, 232, 198, 0.3);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.view-project {
+    opacity: 0;
+    font-size: 1.125rem;
+    color: var(--hover-color);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.project-card:hover .view-project {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 540px;
+    }
+
+    .view-project {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        z-index: 2;
+        pointer-events: auto;
+        text-indent: -9999px;
+        background: transparent;
+    }
+
+    .project-card:hover .view-project {
+        opacity: 0;
+    }
+}

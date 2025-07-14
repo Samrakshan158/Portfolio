@@ -1,0 +1,45 @@
+#education {
+    background-color: #1B2E69;
+    padding: 3rem 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#education h2,
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.education-entry {
+    background-color: var(--card-color, #2C3E91);
+    color: #c9d1d9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 540px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.3s ease, transform 0.6s ease;
+}
+
+.education-entry.visible {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+
+.education-entry h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-entry p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+}
