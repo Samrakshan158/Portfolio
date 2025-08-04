@@ -59,7 +59,7 @@ export default function Navbar() {
                     <li><a href="#contact" className="navbar-item"><span className="link-text">Contact</span></a></li>
                     <li>
                         <a
-                            href="/Samrakshan-Sitaula-cv.pdf"
+                            href="Samrakshan-Sitaula-cv.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="navbar-item"
