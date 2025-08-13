@@ -28,6 +28,12 @@ export default function Project() {
                       filtering by status and priority, and real-time task management with visual cues.`,
             image: `${import.meta.env.BASE_URL}to-do-list.png`,
             link: "https://samrakshan158.github.io/To-Do-List/"
+        },
+        {
+            title: "Book Recommendation System",
+            description: `A frontend for a book recommendation system that currently fetches book data from a public API due to the absence of backend components. The app allows users to search and browse books, providing a clean and responsive UI. Plans are in place to integrate a custom backend soon, enabling personalized recommendations and enhanced features for a complete recommendation experience.`,
+            image: `${import.meta.env.BASE_URL}book-recom.png`,
+            link: "https://samrakshan158.github.io/book-recommendation-system/"
         }
     ];
 
